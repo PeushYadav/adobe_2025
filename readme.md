@@ -9,21 +9,7 @@ JSON and a final PDF.
 
 Project Structure
 
-pdf-structure-extractor/
-pdf-structure-extractor/
-├── uploads/ # Stores uploaded PDF files
-├── index.js # Main backend entry (Node.js)
-├── processpdf.js # Logic to split PDF and manage processing
-├── frontend/ # React + Vite frontend
-│ ├── src/
-│ ├── public/
-│ ├── package.json
-│ └── ...
-├── llm-server/ # FastAPI-based Python LLM handler
-│ ├── main.py
-│ ├── download_model.py
-│ ├── requirements.txt
-│ └── ...
+<pre> pdf-structure-extractor/ ├── uploads/ # Stores uploaded PDF files ├── index.js # Main backend entry (Node.js) ├── processpdf.js # PDF splitting and processing logic ├── frontend/ # React + Vite frontend │ ├── public/ │ ├── src/ │ ├── package.json │ └── ... ├── llm-server/ # FastAPI-based Python LLM handler │ ├── main.py │ ├── download_model.py │ ├── requirements.txt │ └── ... ├── .gitignore └── README.md </pre>
 Features
 - Upload a PDF via UI
 - Automatically chunks into ~500-word parts
