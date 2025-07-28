@@ -9,7 +9,43 @@ JSON and a final PDF.
 
 Project Structure
 
-<pre> pdf-structure-extractor/ ├── uploads/ # Stores uploaded PDF files ├── index.js # Main backend entry (Node.js) ├── processpdf.js # PDF splitting and processing logic ├── frontend/ # React + Vite frontend │ ├── public/ │ ├── src/ │ ├── package.json │ └── ... ├── llm-server/ # FastAPI-based Python LLM handler │ ├── main.py │ ├── download_model.py │ ├── requirements.txt │ └── ... ├── .gitignore └── README.md </pre>
+Got it! Here's your **Project Structure section rewritten in a clean, numbered format** (ideal for GitHub READMEs):
+
+---
+
+### 📁 **Project Structure**
+
+1. **`uploads/`**
+   Stores uploaded PDF files from the frontend.
+
+2. **`index.js`**
+   Main Node.js backend file to handle file upload and processing.
+
+3. **`processpdf.js`**
+   Contains logic to split PDFs into chunks and manage token limits for LLM.
+
+4. **`frontend/`** (React + Vite app)
+
+   * `public/` – Static assets
+   * `src/` – React components and frontend logic
+   * `package.json` – Frontend dependencies and scripts
+
+5. **`llm-server/`** (Python backend with FastAPI)
+
+   * `main.py` – API endpoints for processing text using Tiny LLM
+   * `download_model.py` – Downloads and prepares the LLM model
+   * `requirements.txt` – Python dependencies for the server
+
+6. **`.gitignore`**
+   Lists files and folders ignored by Git (like `node_modules` and `venv`).
+
+7. **`README.md`**
+   Documentation of the project.
+
+---
+
+Let me know if you want this embedded back into the full README and exported as an updated PDF.
+
 Features
 - Upload a PDF via UI
 - Automatically chunks into ~500-word parts
